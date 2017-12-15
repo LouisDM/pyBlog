@@ -1,0 +1,2 @@
+# pyBlog
+Django Blog Demo
