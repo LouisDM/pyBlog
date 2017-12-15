@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    <a href="{% url 'blog:article_edit' 0 %}">新文章</a>
+</h1>
+
+{% for foo in articles %}
+    <a href="{% url 'blog:article_page' foo.id %}">
+        <h2>{{ foo.title }}</h2>
+    </a>
+{% endfor %}
+
+</body>
+</html>
